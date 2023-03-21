@@ -76,6 +76,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>{var:freeze_keyword}</string>
+				<key>subtext</key>
+				<string>Pause execution of frontmost app</string>
+				<key>text</key>
+				<string>Freeze</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>391EDE9B-08C4-4B4A-A84B-8AB481A2F7B2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -107,27 +128,6 @@ notification "Froze ${front_app}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>{var:freeze_keyword}</string>
-				<key>subtext</key>
-				<string>Pause execution of frontmost app</string>
-				<key>text</key>
-				<string>Freeze</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>391EDE9B-08C4-4B4A-A84B-8AB481A2F7B2</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -153,6 +153,27 @@ notification "Froze ${front_app}"</string>
 			<string>CE15752D-DC11-4A3C-BD59-454E1EF945E5</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>{var:unfreeze_keyword}</string>
+				<key>subtext</key>
+				<string>Resume execution of frontmost app</string>
+				<key>text</key>
+				<string>Unfreeze</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>B5E21680-DC90-4677-AD06-F60A31AE9161</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -188,27 +209,6 @@ notification "Unfroze ${front_app}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>{var:unfreeze_keyword}</string>
-				<key>subtext</key>
-				<string>Resume execution of frontmost app</string>
-				<key>text</key>
-				<string>Unfreeze</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>B5E21680-DC90-4677-AD06-F60A31AE9161</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -239,7 +239,7 @@ notification "Unfroze ${front_app}"</string>
 	<key>readme</key>
 	<string>## Usage
 
-Pause execution of the frontmost app via the Freeze Keyword (default: `freeze`). Resume with the Unfreeze Keyword (default: `unfreeze`). Inspired by the [Universal Pause Button](https://github.com/ryanries/UniversalPauseButton/blob/dc5a3d5173e153012fee850e557755e250da9105/README.md).
+Pause execution of the frontmost app via the `freeze` keyword. Resume with `unfreeze`. Inspired by the [Universal Pause Button](https://github.com/ryanries/UniversalPauseButton/blob/dc5a3d5173e153012fee850e557755e250da9105/README.md).
 
 ![Freeze app](images/about/freeze.png)
 
@@ -334,8 +334,6 @@ Configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey
 			<string>unfreeze_keyword</string>
 		</dict>
 	</array>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
 	<string>2023.1</string>
 	<key>webaddress</key>
