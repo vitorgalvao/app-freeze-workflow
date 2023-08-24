@@ -106,7 +106,7 @@
   ./notificator --message "${1}" --title "${alfred_workflow_name}"
 }
 
-front_app="$(osascript -e 'tell application "System Events" to return name of first process whose frontmost is true')"
+readonly front_app="$(osascript -e 'tell application "System Events" to return name of first process whose frontmost is true')"
 
 killall -STOP -c "${front_app}"
 
@@ -116,7 +116,7 @@ notification "Froze ${front_app}"</string>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>11</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -187,7 +187,7 @@ notification "Froze ${front_app}"</string>
   ./notificator --message "${1}" --title "${alfred_workflow_name}"
 }
 
-front_app="$(osascript -e 'tell application "System Events" to return name of first process whose frontmost is true')"
+readonly front_app="$(osascript -e 'tell application "System Events" to return name of first process whose frontmost is true')"
 
 killall -CONT -c "${front_app}"
 
@@ -197,7 +197,7 @@ notification "Unfroze ${front_app}"</string>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>11</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
