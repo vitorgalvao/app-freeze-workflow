@@ -80,6 +80,8 @@
 				<integer>2</integer>
 				<key>keyword</key>
 				<string>{var:freeze_keyword}</string>
+				<key>skipuniversalaction</key>
+				<true/>
 				<key>subtext</key>
 				<string>Pause execution of frontmost app</string>
 				<key>text</key>
@@ -161,6 +163,8 @@ notification "Froze ${front_app}"</string>
 				<integer>2</integer>
 				<key>keyword</key>
 				<string>{var:unfreeze_keyword}</string>
+				<key>skipuniversalaction</key>
+				<true/>
 				<key>subtext</key>
 				<string>Resume execution of frontmost app</string>
 				<key>text</key>
