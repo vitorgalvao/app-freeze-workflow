@@ -51,7 +51,7 @@
 	<key>createdby</key>
 	<string>Vítor Galvão</string>
 	<key>description</key>
-	<string>Pause and resume execution of the frontmost app</string>
+	<string>Pause and resume execution of apps</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
