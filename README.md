@@ -6,8 +6,12 @@ Pause and resume execution of the frontmost app
 
 ## Usage
 
-Pause execution of the frontmost app via the `freeze` keyword. Resume with `unfreeze`. Inspired by the [Universal Pause Button](https://github.com/ryanries/UniversalPauseButton/blob/dc5a3d5173e153012fee850e557755e250da9105/README.md).
+Pause execution of a running app via the `freeze` keyword.
 
-![Freeze app](Workflow/images/about/freeze.png)
+![Listing running apps to freeze](Workflow/images/about/freeze.png)
 
-Configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey/) for faster triggering.
+Configure the [Hotkey](https://www.alfredapp.com/help/workflows/triggers/hotkey/) to quickly freeze the frontmost app.
+
+Resume execution with the `unfreeze` keyword.
+
+![Listing apps to unfreeze](Workflow/images/about/unfreeze.png)
