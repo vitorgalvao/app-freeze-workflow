@@ -1,6 +1,6 @@
 # <img src='Workflow/icon.png' width='45' align='center' alt='icon'> App Freeze Alfred Workflow
 
-Pause and resume execution of the frontmost app
+Pause and resume execution of apps
 
 [⤓ Install on the Alfred Gallery](https://alfred.app/workflows/vitor/app-freeze)
 
